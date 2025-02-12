@@ -5,19 +5,19 @@ const footerData = [
         { name: "Frontend Developer", link: "/" },
         { name: "Backend Developer", link: "/" },
         { name: "Full Stack Developer", link: "/" },
-        { name: "DevOps / SRE", link: "/" },
+        { name: "DevOps / SRE Developer", link: "/" },
         { name: "Cybersecurity", link: "/" },
         { name: "QA / Automation", link: "/" }
       ]
     },
     {
-      title: "Data Science",
+      title: "Interview Question",
       list: [
-        { name: "Data Engineer", link: "/" },
-        { name: "Data Scientist", link: "/" },
-        { name: "Data Analyst", link: "/" },
-        { name: "Big Data", link: "/" },
-        { name: "AI / ML", link: "/" }
+        { name: "Python Question", link: "/question/python" },
+        { name: "React Js Question", link: "/question/reactjs" },
+        { name: "Node Js Question", link: "/question/nodejs" },
+        { name: "C++ Question", link: "/question/c++" },
+        { name: "JavaScript Question", link: "/question/javascript" }
       ]
     },
     {

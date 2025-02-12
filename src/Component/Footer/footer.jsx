@@ -83,7 +83,7 @@ const Footer = () => {
           <Grid2 container justifyContent="space-between" alignItems="center">
             <Grid2 item size={{ xs: 12, sm: 6 }}>
               <Typography variant="body2">
-                Copyright © 2024 Preplaced.in
+                original 2024 interviewQuestion.in
               </Typography>
               <Typography variant="body2">
                 Preplaced Education Private Limited
@@ -91,12 +91,12 @@ const Footer = () => {
               <Typography variant="body2">
                 Ibblur Village, Bangalore - 560103
               </Typography>
-              <Typography variant="body2">GSTIN - 29AAKCP9555E1ZV</Typography>
+              <Typography variant="body2">GSTIN - xxxxxxxxxxxxxx</Typography>
             </Grid2>
 
             <Grid2 item size={{ xs: 12, sm: 6 }} textAlign="right">
               <Typography variant="body2">
-                mentee-support@preplaced.in
+                sahilramani2021@preplaced.in
               </Typography>
               <Box
                 sx={{

@@ -6,6 +6,7 @@ import logoData from "../Data/logoData";
 import BrandLogo from "../Data/BrandLogo";
 import BannerLine from "../Components/button/BannerLine";
 import SlickSlider from "../Components/SlickSlider";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
                     mb: 2,
                   }}
                 >
-                  Welcome to the Interview Question
+                  Welcome to the Interview question
                 </Typography>
                 <Typography
                   sx={{
@@ -57,6 +58,7 @@ const Home = () => {
             <Grid2 item size={{ xs: 12, md: 6 }} sx={{ textAlign: "center" }}>
               <Box sx={{ width: { xs: "80%", md: "70%" }, mx: "auto" }}>
                 <img src={img1} width="100%" alt="Hero Image" />
+                <NavLink to={'/question/reactjs'}>
                 <Box
                   sx={{
                     width: "100%",
@@ -79,6 +81,7 @@ const Home = () => {
                     hello
                   </Typography>
                 </Box>
+                </NavLink>
               </Box>
             </Grid2>
           </Grid2>
@@ -204,7 +207,7 @@ const Home = () => {
       {/* Slider Section */}
       <Box sx={{ backgroundColor: "#F5ECD5", py: { xs: 4, sm: 6 } }}>
         <Container maxWidth="xl">
-          <SlickSlider />
+          <SlickSlider  />
         </Container>
       </Box>
     </div>

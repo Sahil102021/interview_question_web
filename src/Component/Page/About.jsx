@@ -179,7 +179,7 @@ const About = () => {
                   p: { xs: "25px", md: "50px" },
                 }}
               >
-                <Typography variant="h2" sx={{ fontWeight: "600" }}>
+                <Typography variant={{xs:"h4", md:"h2"}} sx={{ fontWeight: "600" }}>
                 Built for Job , Powered by AI
                 </Typography>
               </Box>

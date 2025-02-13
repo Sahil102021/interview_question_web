@@ -24,7 +24,7 @@ const PrevArrow = ({ onClick }) => (
       background: "#578E7E",
       borderRadius: "50%",
       padding: "8px",
-      fontSize: "24px",
+      fontSize: '20px',
       zIndex: 2,
     }} 
   />
@@ -43,7 +43,7 @@ const NextArrow = ({ onClick }) => (
       background: "#578E7E",
       borderRadius: "50%",
       padding: "8px",
-      fontSize: "24px",
+      fontSize: "20px",
       zIndex: 2,
     }} 
   />

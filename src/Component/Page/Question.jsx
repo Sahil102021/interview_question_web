@@ -93,7 +93,7 @@ const Python = () => {
             >
               {params.id} Most Used Interview Questions
             </Typography>
-            <Box sx={{ display: "flex", alignItems: "center", gap: "15px" }}>
+            <Box sx={{ display: "flex", flexWrap:'wrap', gap: "15px" }}>
               <Button
               onClick={onDownload}
                 variant="contained"
@@ -198,7 +198,7 @@ const Python = () => {
                       }}
                       onClick={() => handleSingleQuestion(el)}
                     >
-                      <Typography sx={{ fontSize: "16px", px: "5px" }}>
+                      <Typography sx={{ fontSize: "16px", px: "5px" ,textAlign:'left' }}>
                         {i + 1} . {el.question}
                       </Typography>
                     </Box>
@@ -234,7 +234,7 @@ const Python = () => {
                       >
                         {q.question}
                       </Typography>
-                      <Typography variant="body1" sx={{ color: "#555" }}>
+                      <Typography variant="body1" sx={{ color: "#555" , textAlign:'justify' }}>
                         {q.answer}
                       </Typography>
                       {q.photos ? (

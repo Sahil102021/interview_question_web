@@ -92,7 +92,9 @@ const Header = () => {
           <Toolbar>
             {/* Logo */}
             <Box sx={{ width: { xs: "75px", sm: "175px" }, flexShrink: 0 }}>
-              <NavLink to="/"><img src={logo} alt="Logo" width="100%" /></NavLink>
+              <NavLink to="/">
+                <img src={logo} alt="Logo" width="100%" />
+              </NavLink>
             </Box>
 
             {/* Navigation Menu */}
@@ -116,7 +118,10 @@ const Header = () => {
                       borderRadius: "8px",
                     },
                   }}
-                  onClick={() => handleClick(i)}
+                  onClick={() => {
+                    setIsDrawerOpen(false); // Close drawer on click
+                    handleClick(i);
+                  }}
                 >
                   <NavLink to={el.link}>
                     <Typography sx={{ color: "#3D3D3D" }}>{el.name}</Typography>
@@ -150,11 +155,14 @@ const Header = () => {
                               },
                             }}
                           >
-                            <Typography sx={{color:'black'}}>{item.icon}</Typography>
+                            <Typography sx={{ color: "black" }}>
+                              {item.icon}
+                            </Typography>
                             <Typography
                               variant="body2"
                               sx={{
                                 color: "#3D3D3D",
+                                textAlign: "left",
                                 "&:hover": {
                                   color: "green",
                                 },
@@ -197,11 +205,11 @@ const Header = () => {
                 marginLeft: "auto",
               }}
             >
-              <NavLink to="/signupform">
+              {/* <NavLink to="/signupform">
                 <Button
                   variant="outlined"
                   sx={{
-                    p: { xs: "1px", xl: "5px 10px" },
+                    p: { xs: "1px 2px", xl: "5px 10px" },
                     color: "#0097a0",
                     borderColor: "#0097a0",
                     "&:hover": {
@@ -212,31 +220,33 @@ const Header = () => {
                 >
                   Sign Up
                 </Button>
+              </NavLink> */}
+              <NavLink to="/signupform">
+                <Button
+                  variant="contained"
+                  onClick={() => handleArrowClick()}
+                  sx={{
+                    p: { xs: "1px 3px", xl: "5px 10px" },
+                    display: { xs: "flex", lg: "flex" },
+                    alignItems: "center",
+                    gap: "5px",
+                    textTransform: "capitalize",
+                    backgroundColor: "#0097a0",
+                    "&:hover": {
+                      backgroundColor: "#006e75",
+                    },
+                  }}
+                  startIcon={<KeyboardDoubleArrowUpIcon />}
+                >
+                  Sign Up
+                </Button>
               </NavLink>
-              <Button
-                variant="contained"
-                onClick={() => handleArrowClick()}
-                sx={{
-                  p: { sm: "5px 10px" },
-                  display: { xs: "none", lg: "flex" },
-                  alignItems: "center",
-                  gap: "5px",
-                  textTransform: "capitalize",
-                  backgroundColor: "#0097a0",
-                  "&:hover": {
-                    backgroundColor: "#006e75",
-                  },
-                }}
-                startIcon={<KeyboardDoubleArrowUpIcon />}
-              >
-                Experience Scale
-              </Button>
               <IconButton
                 color="inherit"
                 onClick={() => setIsDrawerOpen(true)}
                 sx={{ display: { md: "none" } }}
               >
-                <MenuIcon sx={{color:'black'}}/>
+                <MenuIcon sx={{ color: "black" }} />
               </IconButton>
             </Box>
           </Toolbar>
@@ -250,7 +260,7 @@ const Header = () => {
         onClose={() => setIsDrawerOpen(false)}
       >
         <Box sx={{ width: 250, py: "20px" }}>
-          {/* Search Bar */}
+          {/* Search Bar
           <Search sx={{ width: { xs: "150px" } }}>
             <SearchIconWrapper>
               <SearchIcon />
@@ -259,7 +269,7 @@ const Header = () => {
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
-          </Search>
+          </Search> */}
 
           <Box
             sx={{
@@ -282,7 +292,9 @@ const Header = () => {
                       borderBottom: "1px solid #eee",
                       "&:hover": { backgroundColor: "#f5f5f5" },
                     }}
-                    onClick={() => setOpenSubMenu(openSubMenu === i ? null : i)}
+                    onClick={() =>{ 
+                      setIsDrawerOpen(el.name === "Resources" ? true : false)// Close drawer on click
+                      setOpenSubMenu(openSubMenu === i ? null : i)}}
                   >
                     <NavLink
                       to={el.link}
@@ -292,7 +304,9 @@ const Header = () => {
                         width: "100%",
                       }}
                     >
-                      <Typography>{el.name}</Typography>
+                      <Typography sx={{ "&:hover": { color: "green" } }}>
+                        {el.name}
+                      </Typography>
                     </NavLink>
                   </ListItem>
 
@@ -318,6 +332,7 @@ const Header = () => {
                               color: "#555",
                               width: "100%",
                             }}
+                            onClick={() => setIsDrawerOpen(false)} // Close drawer on click
                           >
                             <Typography>{sub.name}</Typography>
                           </NavLink>

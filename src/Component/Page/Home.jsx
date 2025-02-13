@@ -107,11 +107,11 @@ const Home = () => {
               sx={{ display: "flex", justifyContent: "center" }}
             >
               {logoData.map((el, index) => (
-                <Grid2 key={index} size={{ xs: 6, sm: 4, md: 2 }}>
+                <Grid2 key={index} size={{ xs: 12 , sm: 4, md: 2 }}>
                   <Box
                     sx={{
                       width: "100%",
-                      height: { xs: "100px", sm: "150px" },
+                      height: { xs: "150px", sm: "150px" },
                       border: "0px solid black",
                       borderRadius: "10px",
                       overflow: "hidden",
@@ -170,7 +170,7 @@ const Home = () => {
           </Typography>
           <Grid2 container justifyContent="center">
             {BrandLogo.map((el, index) => (
-              <Grid2 item size={{ xs: 6, md: 2 }} key={index}>
+              <Grid2 item size={{ xs: 6, sm: 4 ,md:2 }} key={index}>
                 <Box
                   sx={{
                     width: "100%",

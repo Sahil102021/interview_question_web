@@ -34,8 +34,8 @@ const TopBanner = (props) => {
             >
               {props.title}
             </Typography>
-            <Box sx={{ display: "flex", alignItems: "center", gap: "15px" }}>
-              <Button
+            <Box sx={{ display: "flex", flexWrap:'wrap', gap: "15px" }}>
+              {/* <Button
                 // href="/signup"
                 variant="contained"
                 sx={{
@@ -48,7 +48,7 @@ const TopBanner = (props) => {
                 }}
               >
                 Click
-              </Button>
+              </Button> */}
               <Box
                 sx={{
                   display: "flex",

@@ -9,9 +9,11 @@ import { IoLogoJavascript } from "react-icons/io";
 import { FaC } from "react-icons/fa6";
 
 
+
+
 let manuData = [
   {
-    name: "Practice",
+    name: "Home",
     link: "/",
   },
   {
@@ -51,36 +53,32 @@ let manuData = [
     ],
   },
   {
-    name: "Contests",
-    link: "/",
-  },
-  {
     name: "Online IDE",
     icon: <KeyboardArrowDownIcon />,
     list: [
       {
         name: "Online C++ Complier",
-        link: "/",
+        link: "https://www.programiz.com/cpp-programming/online-compiler/",
         icon: <FeaturedPlayListIcon />,
       },
       {
         name: "Online C Complier",
-        link: "/",
+        link: "https://www.programiz.com/c-programming/online-compiler/",
         icon: <FeaturedPlayListIcon />,
       },
       {
         name: "Online pyton Complier",
-        link: "/",
+        link: "https://www.programiz.com/python-programming/online-compiler/",
         icon: <FeaturedPlayListIcon />,
       },
       {
         name: "Online java Complier",
-        link: "/",
+        link: "https://www.programiz.com/java-programming/online-compiler/",
         icon: <FeaturedPlayListIcon />,
       },
       {
         name: "Online JavaScript Complier",
-        link: "/",
+        link: "https://www.programiz.com/javascript/online-compiler/",
         icon: <FeaturedPlayListIcon />,
       },
     ],

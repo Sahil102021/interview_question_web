@@ -20,7 +20,7 @@ export default function TestimonialCard(props) {
     <Box
       sx={{
         width: "100%",
-        height: "100%",
+        height: "auto",
         borderRadius: "8px",
         backgroundColor: "#fff",
       }}
@@ -95,7 +95,7 @@ export default function TestimonialCard(props) {
                 >
                   Offers from
                 </Typography>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Box sx={{ display: "flex", alignItems: "center" ,flexWrap:'wrap' , gap: 1 }}>
                   <CompanyLogo src={props.img1}  alt="Google logo" />
                   <CompanyLogo src={props.img2} alt="Microsoft logo" />
                   <CompanyLogo src={props.img3} alt="Bloomberg logo" />

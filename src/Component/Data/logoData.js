@@ -15,29 +15,30 @@ import logo4 from "../image/4.png";
 // <a href="https://ibb.co/YFKy2sBv"><img src="https://i.ibb.co/W4dPnJvS/Green-and-Yellow-Simple-Clean-Shoes-Sale-Banner.png" alt="Green-and-Yellow-Simple-Clean-Shoes-Sale-Banner" border="0"></a><br /><a target='_blank' href='https://nonprofitlight.com/or/portland/university-of-western-states'>university of western states</a><br />*/}
 const logoData = [
   {
-    name: "React",
-    img: 'https://i.ibb.co/W4dPnJvS/Green-and-Yellow-Simple-Clean-Shoes-Sale-Banner.png',
-    detail : 'React one of the best detail '
+    name: "Python",
+    img: 'https://res.cloudinary.com/dttftmu4m/image/upload/v1739436762/Green_Watercolour_Opening_Soon_Banner_2_syfrey.png',
+    detail : 'Python simpla and fast learning.'
   },
   {
-    name: "NodeJs",
-    img: 'https://i.ibb.co/5XNS12ZP/2.png',
-    detail : 'Nodejs is javascript'
+    name: "Reactjs",
+    img: 'https://res.cloudinary.com/dttftmu4m/image/upload/v1739436764/Green_Watercolour_Opening_Soon_Banner_1_xpwml0.png',
+    detail : 'React is web application leaning'
   },
   {
-    name: "Nagular",
-    img: 'https://i.ibb.co/yB6LY1z7/3.png',
-    detail : 'Nodejs is javascript'
+    name: "Nodejs",
+    img: 'https://res.cloudinary.com/dttftmu4m/image/upload/v1739436763/Green_Watercolour_Opening_Soon_Banner_ihnhio.png',
+    detail : 'Nodejs simpla and fast learning api create.'
+
   },
   {
-    name: "python",
-    img: 'https://i.ibb.co/NgnSHgXd/4.png',
-    detail : 'Nodejs is javascript'
+    name: "JavaScript",
+    img: 'https://res.cloudinary.com/dttftmu4m/image/upload/v1739436763/Green_Watercolour_Opening_Soon_Banner_3_ynszrz.png',
+    detail : 'javascript is client and server boath learning .'
   },
   {
-    name: "python",
-    img: 'https://i.ibb.co/NgnSHgXd/4.png',
-    detail : 'Nodejs is javascript'
+    name: "C++",
+    img: 'https://res.cloudinary.com/dttftmu4m/image/upload/v1739436762/Green_Watercolour_Opening_Soon_Banner_4_tcyos6.png',
+    detail : 'C++ is simpale and esay learing .'
   },
 ];
 

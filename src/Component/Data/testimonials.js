@@ -21,7 +21,7 @@ const testimonials = [
     },
     {
       name: "Sarah Smith",
-      description: "An excellent platform for interview preparation. The problem-solving structure, along with the time-based questions, is extremely useful for building speed and accuracy.",
+      description: "This platform helped me improve my coding skills significantly. The IDE is intuitive, and the level progression helped me track my improvement. Highly recommended for anyone looking to sharpen their skills.",
       photos: ["https://example.com/photo3.jpg"],
       brandLogo: [
         "https://i.ibb.co/9HmjhPBb/Facebook-Logo-2019.png", // Google logo

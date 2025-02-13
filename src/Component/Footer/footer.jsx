@@ -29,9 +29,10 @@ const Footer = () => {
           {/* Main Footer Grid */}
           <Grid2 container spacing={4}>
             {footerData.map((category, index) => (
-              <Grid2 item size={{ xs: 6, md: 2 }} key={index}>
+              <Grid2 item size={{ xs: 12, sm:6 , md:2 }} key={index}>
                 <Typography fontWeight="bold">{category.title}</Typography>
                 {category.list.map((el, idx) => (
+                  <>
                   <NavLink
                     to={el.link}
                     key={idx}
@@ -70,7 +71,8 @@ const Footer = () => {
                     >
                       {el.name}
                     </Typography>
-                  </NavLink>
+                  </NavLink> <br />
+                  </>
                 ))}
               </Grid2>
             ))}
@@ -94,7 +96,7 @@ const Footer = () => {
               <Typography variant="body2">GSTIN - xxxxxxxxxxxxxx</Typography>
             </Grid2>
 
-            <Grid2 item size={{ xs: 12, sm: 6 }} textAlign="right">
+            <Grid2 item size={{ xs: 12, sm: 6 }} sx={{textAlign:{xs:'left',md:'right'}}}>
               <Typography variant="body2">
                 sahilramani2021@preplaced.in
               </Typography>
@@ -102,7 +104,7 @@ const Footer = () => {
                 sx={{
                   display: "flex",
                   gap: 1,
-                  justifyContent: "flex-end",
+                  justifyContent: {xs:"left" , md:'right'},
                   mt: 1,
                 }}
               >

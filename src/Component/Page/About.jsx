@@ -62,7 +62,7 @@ const About = () => {
                 <Typography variant="h4" fontWeight={"700"}>
                   What We Do
                 </Typography>
-                <Typography variant="body1" color="gray">
+                <Typography variant="body1" color="gray" textAlign='justify'>
                   At MockQuestions.com, we are dedicated to helping job seekers
                   prepare for their interviews and secure their dream jobs. We
                   provide an extensive collection of tools and resources to
@@ -80,7 +80,7 @@ const About = () => {
                   <Typography variant="h6" sx={{ fontWeight: "600" }}>
                     Our Mission
                   </Typography>
-                  <Typography variant="body1" color="gray">
+                  <Typography variant="body1" color="gray" textAlign='justify'>
                     To equip job seekers with the necessary tools, insights, and
                     strategies to tackle challenging interview questions and
                     achieve their career aspirations.
@@ -114,7 +114,7 @@ const About = () => {
                 <Typography variant="h4" fontWeight={"700"}>
                   Our History
                 </Typography>
-                <Typography variant="body1" color="gray">
+                <Typography variant="body1" color="gray" textAlign='justify'>
                   Founded in August 2008, MockQuestions.com was created to offer
                   internet users an efficient and effective platform for
                   preparing for job interviews. Since our inception, we have
@@ -135,7 +135,7 @@ const About = () => {
                   <Typography variant="h6" sx={{ fontWeight: "600" }}>
                     Our Mission
                   </Typography>
-                  <Typography variant="body1" color="gray">
+                  <Typography variant="body1" color="gray" textAlign='justify'>
                     To equip job seekers with the tools, knowledge, and
                     strategies needed to approach any interview question with
                     confidence and to achieve their career goals.
@@ -179,7 +179,7 @@ const About = () => {
                   p: { xs: "25px", md: "50px" },
                 }}
               >
-                <Typography variant={{xs:"h4", md:"h2"}} sx={{ fontWeight: "600" }}>
+                <Typography  sx={{ fontWeight: "600" , fontSize: {xs:'32px',md:'56px',} }}>
                 Built for Job , Powered by AI
                 </Typography>
               </Box>
@@ -191,7 +191,7 @@ const About = () => {
                   p: { xs: "25px", md: "50px" },
                 }}
               >
-                <Typography variant="body1" color="gray">
+                <Typography variant="body1" color="gray"  textAlign='justify'>
                   Leveraging artificial intelligence, we deliver personalized
                   insights and recommendations to help job seekers prepare for
                   any interview. The AI analyzes industry trends, commonly asked
@@ -199,7 +199,7 @@ const About = () => {
                   process, making it more effective and targeted.
                 </Typography>{" "}
                 <br />
-                <Typography variant="body1" color="gray">
+                <Typography variant="body1" color="gray" textAlign='justify'>
                   Designed with go-to-market teams in mind, our platform helps
                   users craft precise, impactful responses to interview
                   questions that align with their professional goals. Whether
@@ -207,7 +207,7 @@ const About = () => {
                   tailored strategies to help users shine in specialized roles
                 </Typography>{" "}
                 <br />
-                <Typography variant="body1" color="gray">
+                <Typography variant="body1" color="gray" textAlign='justify'>
                   Our system provides real-time feedback on responses, helping
                   users identify areas of improvement and refine their answers.
                   Performance tracking allows users to monitor progress over

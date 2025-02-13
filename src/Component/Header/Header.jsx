@@ -91,9 +91,9 @@ const Header = () => {
         >
           <Toolbar>
             {/* Logo */}
-            <Box sx={{ width: { xs: "75px", sm: "175px" }, flexShrink: 0 }}>
+            <Box sx={{ width: { xs: "30px", sm: "30px" },p:'0 30px 0 0', flexShrink: 0 }}>
               <NavLink to="/">
-                <img src={logo} alt="Logo" width="100%" />
+                <img src='https://res.cloudinary.com/dttftmu4m/image/upload/v1739442766/books_npweri.png' alt="Logo" width="100%" />
               </NavLink>
             </Box>
 

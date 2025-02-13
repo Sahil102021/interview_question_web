@@ -12,25 +12,23 @@
 
 const BrandLogo = [
   {
-    img: "https://i.ibb.co/qLwTNcFM/600px-OYO-Rooms-logo.png",
+    img: "https://res.cloudinary.com/dttftmu4m/image/upload/v1739441378/file-oyo-rooms-logo-png-wikipedia--comdlpng6936159-removebg-preview_ag8iby.png",
   },
   {
-    img: "https://i.ibb.co/9HmjhPBb/Facebook-Logo-2019.png",
+    img: "https://res.cloudinary.com/dttftmu4m/image/upload/v1739440626/facebook_gaaov6.png",
   },
   {
-    img: "https://i.ibb.co/p60t8S4Y/Phone-Pe-Logo-wine.png",
+    img: "https://res.cloudinary.com/dttftmu4m/image/upload/v1739442302/microsoft_sspdra.png",
   },
   {
-    img: "https://i.ibb.co/PsV0JWbz/Untitled-1.png",
+    img: "https://res.cloudinary.com/dttftmu4m/image/upload/v1739441597/images__3_-removebg-preview_id45rj.png",
+  },
+
+  {
+    img: "https://res.cloudinary.com/dttftmu4m/image/upload/v1739441931/netflix_ppcao7.png",
   },
   {
-    img: "https://i.ibb.co/FkxCtn9B/Untitled-2.png",
-  },
-  {
-    img: "https://i.ibb.co/N6pYtKFv/Untitled-3.png",
-  },
-  {
-    img: "https://i.ibb.co/dJgQZjZS/Untitled-4.png",
+    img: "https://res.cloudinary.com/dttftmu4m/image/upload/v1739441799/logo_orqkkn.png",
   },
   {
     img: "https://i.ibb.co/Rpd4LG5P/Untitled-5.png",

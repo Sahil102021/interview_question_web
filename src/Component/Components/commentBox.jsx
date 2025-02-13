@@ -11,8 +11,8 @@ import img1 from "../image/testimoniyal1.jpg";
 
 const CompanyLogo = styled("img")({
   objectFit: "contain",
-  width: '50px',
-  height: '25px',
+  width: "50px",
+  height: "25px",
 });
 
 export default function TestimonialCard(props) {
@@ -66,11 +66,9 @@ export default function TestimonialCard(props) {
           </Box>
 
           {/* User Details Section */}
-          <Box
-            sx={{ pt: "15px", display: "flex", alignItems: "center", gap: 1.5 }}
-          >
+          <Box sx={{ pt: 2, display: "flex", alignItems: "center", gap: 1.5 }}>
             <Avatar
-              src={img1}
+              src={props.profileImg}
               alt="Profile picture"
               sx={{
                 width: { xs: 40, sm: 48 },
@@ -83,7 +81,7 @@ export default function TestimonialCard(props) {
                 variant="subtitle1"
                 color="text.primary"
                 fontWeight={500}
-                sx={{ textAlign: "left", fontSize: { xs: "14px", sm: "16px" } }}
+                sx={{ textAlign: "left", fontSize: { xs: 14, sm: 16 } }}
               >
                 {props.userName}
               </Typography>
@@ -91,12 +89,19 @@ export default function TestimonialCard(props) {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  sx={{ fontSize: { xs: "12px", sm: "14px" } }}
+                  textAlign='left'
+                  sx={{ fontSize: { xs: 12, sm: 14 } }}
                 >
                   Offers from
                 </Typography>
-                <Box sx={{ display: "flex", alignItems: "center" ,flexWrap:'wrap' , gap: 1 }}>
-                  <CompanyLogo src={props.img1}  alt="Google logo" />
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexWrap: "wrap",
+
+                  }}
+                >
                   <CompanyLogo src={props.img2} alt="Microsoft logo" />
                   <CompanyLogo src={props.img3} alt="Bloomberg logo" />
                 </Box>

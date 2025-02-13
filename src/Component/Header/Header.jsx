@@ -226,7 +226,7 @@ const Header = () => {
                   variant="contained"
                   onClick={() => handleArrowClick()}
                   sx={{
-                    p: { xs: "1px 3px", xl: "5px 10px" },
+                    p: { xs: "1px 8px", xl: "5px 10px" },
                     display: { xs: "flex", lg: "flex" },
                     alignItems: "center",
                     gap: "5px",
@@ -293,7 +293,7 @@ const Header = () => {
                       "&:hover": { backgroundColor: "#f5f5f5" },
                     }}
                     onClick={() =>{ 
-                      setIsDrawerOpen(el.name === "Resources" ? true : false)// Close drawer on click
+                      setIsDrawerOpen(el.list ? true : false )// Close drawer on click
                       setOpenSubMenu(openSubMenu === i ? null : i)}}
                   >
                     <NavLink
@@ -342,18 +342,6 @@ const Header = () => {
                   )}
                 </Box>
               ))}
-              <Box sx={{ p: "10px 15px" }}>
-                <NavLink
-                  to="/signupform"
-                  style={{
-                    textDecoration: "none",
-                    color: "#000",
-                    width: "100%",
-                  }}
-                >
-                  <Typography>SignUp</Typography>
-                </NavLink>
-              </Box>
             </List>
           </Box>
         </Box>

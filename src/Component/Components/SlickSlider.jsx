@@ -77,7 +77,7 @@ function SlickSlider() {
           <Box key={index} sx={{ padding: "20px", textAlign: "center" }}>
             <Box
               sx={{
-                height: "300px",
+                height: "auto",
                 backgroundColor: "",
                 borderRadius: "10px",
                 display: "flex",
@@ -92,7 +92,7 @@ function SlickSlider() {
                 margin:'10px'
               }}
             >
-              {<CommentBox description={el.description} userName={el.name} img1={el.brandLogo[0]} img2={el.brandLogo[1]} img3={el.brandLogo[2]}/>}
+              {<CommentBox description={el.description} userName={el.name}  img2={el.brandLogo[1]} img3={el.brandLogo[2]}/>}
             </Box>
           </Box>
         ))}

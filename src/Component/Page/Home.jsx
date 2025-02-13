@@ -163,12 +163,12 @@ const Home = () => {
       <BannerLine title="Python • C++ • ReactJS • NodeJS" />
 
       {/* Brand Logos */}
-      <Box sx={{ py: { xs: 4, sm: 6 }, textAlign: "center" }}>
+      <Box sx={{ py: { xs: 4, sm: 10 }, textAlign: "center" }}>
         <Container maxWidth="xl">
           <Typography sx={{ fontSize: "28px", fontWeight: "bold", mb: 3 }}>
             Our Users Have <b>Cracked Interviews At</b>
           </Typography>
-          <Grid2 container justifyContent="center">
+          <Grid2 container justifyContent="left" spacing={2}>
             {BrandLogo.map((el, index) => (
               <Grid2 item size={{ xs: 6, sm: 4 ,md:2 }} key={index}>
                 <Box
